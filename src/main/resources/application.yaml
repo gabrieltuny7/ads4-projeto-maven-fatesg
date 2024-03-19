@@ -1,0 +1,25 @@
+oject:
+  name: '@project.artifactId@'
+  version: '@project.version@'
+  description: '@project.description@'
+info:
+  build:
+    artifact: "@project.artifactId@"
+    name: "@project.name@"
+    description: '@project.description@'
+    version: '@project.version@'
+
+application:
+  title: ${project.name}
+  version: ${project.version}
+
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+
+  #Logging
+  logging:
+    level:
+      br.senac.go: debug
+      org.springframework.web: info
